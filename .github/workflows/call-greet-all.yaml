@@ -1,0 +1,11 @@
+on:
+  [workflow_dispatch]
+
+jobs:
+  call-greet-all:
+    name: A job to call greet all
+    uses: EricSoder/greet-all-workflow/.github/workflows/greet-all-workflow.yml@main
+    with:
+      greet-composit: 'Composit'
+      greet-javascript: 'JavaScript'
+      greet-container: 'Container'
